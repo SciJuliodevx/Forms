@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulários Minimalistas</title>
+</head>
+<body>
+    <header>
+        <h1>Seus Dados</h1>
+        <p>Informções Necessarias para cadastro</p>
+    </header>
+    
+    <section class="form-section">
+        <h2>Formulário de Contato</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Nome completo</label>
+                <input type="text" id="name" placeholder="Digite seu nome">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="seu@email.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Assunto</label>
+                <select id="subject">
+                    <option value="" disabled selected>Selecione um assunto</option>
+                    <option value="support">Suporte</option>
+                    <option value="sales">Vendas</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea id="message" rows="5" placeholder="Digite sua mensagem"></textarea>
+            </div>
+            
+            <input type="submit" value="Enviar mensagem">
+        </form>
+    </section>
+    
+    <section class="form-section">
+        <h2>Formulário de Cadastro</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name">Primeiro nome</label>
+                    <input type="text" id="first-name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="last-name">Sobrenome</label>
+                    <input type="text" id="last-name">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="register-email">E-mail</label>
+                <input type="email" id="register-email">
+            </div>
+            
+            <div class="form-group">
+                <label for="register-password">Senha</label>
+                <input type="password" id="register-password">
+            </div>
+            
+            <div class="form-group">
+                <label for="birthdate">Data de nascimento</label>
+                <input type="date" id="birthdate">
+            </div>
+            
+            <div class="form-group">
+                <label>Gênero</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Masculino</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Feminino</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Outro</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="interests">Interesses</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="tech" name="interests" value="tech">
+                        <label for="tech">Tecnologia</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="sports" name="interests" value="sports">
+                        <label for="sports">Esportes</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="music" name="interests" value="music">
+                        <label for="music">Música</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar" style="background: #ccc; margin-left: 10px;">
+            </div>
+        </form>
+    </section>
+    
+    <section class="form-section">
+        <h2>Formulário de Pesquisa</h2>
+        <form>
+            <div class="form-group">
+                <label for="age">Idade</label>
+                <input type="number" id="age" min="18" max="99">
+            </div>
+            
+            <div class="form-group">
+                <label for="satisfacao">Nível de satisfação</label>
+                <select id="satisfacao">
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="5">Muito satisfeito</option>
+                    <option value="4">Satisfeito</option>
+                    <option value="3">Neutro</option>
+                    <option value="2">Insatisfeito</option>
+                    <option value="1">Muito insatisfeito</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="comments">Comentários adicionais</label>
+                <textarea id="comments" rows="3"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="website">Seu website (opcional)</label>
+                <input type="url" id="website" placeholder="https://exemplo.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Telefone para contato</label>
+                <input type="tel" id="phone" placeholder="(00) 00000-0000">
+            </div>
+            
+            <div class="form-group">
+                <label for="appointment">Horário preferencial para contato</label>
+                <input type="time" id="appointment">
+            </div>
+            
+            <input type="submit" value="Enviar pesquisa">
+        </form>
+    </section>
+    
+</body>
+</html>
